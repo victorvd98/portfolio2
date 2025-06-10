@@ -20,21 +20,30 @@ body {
 .nav {
     display: flex;
     flex-direction: column;
-    flex-grow: 1;
+    flex: 1 1 0;
     background-color: yellow;
     overflow: hidden;
+    min-width: 0;
+    padding: 1rem;
 }
 
-.nav>h1,
-.nav>h3 {
-    position: absolute;
-    cursor: pointer;
+h1,
+h3 {
+    white-space: nowrap;
+    /* Prevent line wrapping */
+    overflow: hidden;
+    /* Clip text */
+    max-width: 100%;
+    /* Force it to respect container */
 }
 
 .projects {
     display: flex;
     flex-direction: column;
-    flex-grow: 1;
+    flex: 1 1 0;
+    overflow: hidden;
+    min-width: 0;
+    padding: 1rem;
     background-color: lightblue;
 }
 

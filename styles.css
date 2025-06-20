@@ -7,7 +7,8 @@
       padding: 0;
       text-align: center;
     }
-    .intro {
+
+.intro {
       max-width: none;
       margin: 0;
       padding: 2rem;
@@ -16,13 +17,15 @@
       text-align: left;
       color: #2c2c2c;
     }
-    h1 {
+
+h1 {
       font-style: italic;
       display: inline;
       color: #2c2c2c;
       font-size: inherit;
     }
-    .grid {
+
+.grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       grid-template-rows: repeat(2, 1fr);
@@ -32,21 +35,23 @@
       aspect-ratio: 3/2;
       box-sizing: border-box;
     }
-    @media (max-width: 700px) {
+
+@media (max-width: 700px) {
       .grid {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3, 1fr);
         aspect-ratio: 2/3;
       }
     }
-    .grid-item {
+.grid-item {
       display: flex;
       justify-content: center;
       align-items: center;
       width: 100%;
       height: 100%;
     }
-    .item {
+
+.item {
       text-decoration: none;
       color: #2c2c2c;
       font-style: italic;
@@ -60,7 +65,8 @@
       box-sizing: border-box;
       transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     }
-    .circle {
+
+.circle {
       border: 1px solid #2c2c2c;
       border-radius: 50%;
       width: 90%;
@@ -68,12 +74,14 @@
       aspect-ratio: 1;
       transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     }
-    .circle:hover {
+
+.circle:hover {
       background-color: #ff8a94;
       border-color: #ff8a94;
       color: #f0f0f0;
     }
-    .diamond {
+
+.diamond {
       width: 70%;
       height: 70%;
       aspect-ratio: 1;
@@ -81,20 +89,24 @@
       border: 1px solid #2c2c2c;
       transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     }
-    .diamond:hover {
+
+.diamond:hover {
       background-color: #b799ff;
       border-color: #b799ff;
     }
-    .diamond:hover span {
+
+.diamond:hover span {
       color: #f0f0f0;
     }
-    .diamond span {
+
+.diamond span {
       transform: rotate(-45deg);
       display: block;
       transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
       color: #2c2c2c;
     }
-    .rounded-square-outline {
+
+.rounded-square-outline {
       width: 90%;
       height: 90%;
       aspect-ratio: 1;
@@ -105,15 +117,18 @@
       align-items: center;
       transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     }
-    .rounded-square-outline:hover {
+
+.rounded-square-outline:hover {
       background-color: #7dd87d;
       border-color: #7dd87d;
       color: #f0f0f0;
     }
-    .rounded-square-outline:hover .item {
+
+.rounded-square-outline:hover .item {
       color: #f0f0f0;
     }
-    .oval-group {
+
+.oval-group {
       display: flex;
       flex-direction: column;
       gap: 10%;
@@ -122,7 +137,8 @@
       justify-content: center;
       align-items: center;
     }
-    .oval {
+
+.oval {
       width: 90%;
       height: 35%;
       border-radius: 50%;
@@ -134,17 +150,20 @@
       transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
       color: #2c2c2c;
     }
-    .oval:nth-child(1):hover {
+
+.oval:nth-child(1):hover {
       background-color: #66b3ff;
       border-color: #66b3ff;
       color: #f0f0f0;
     }
-    .oval:nth-child(2):hover {
+
+.oval:nth-child(2):hover {
       background-color: #ffcc66;
       border-color: #ffcc66;
       color: #f0f0f0;
     }
-    .ascii {
+
+.ascii {
       font-family: monospace;
       font-size: clamp(0.6rem, 1.5vw, 1rem);
       line-height: 1.2;
@@ -155,7 +174,8 @@
       justify-content: center;
       align-items: center;
     }
-    footer {
+
+footer {
       margin: 2rem 0 0 0;
       font-size: 0.9rem;
       max-width: none;
@@ -165,38 +185,38 @@
       color: #2c2c2c;
     }
     
-    footer a {
+footer a {
       color: #2c2c2c;
       text-decoration: underline;
       transition: all 0.3s ease;
     }
     
-    footer a:hover {
+footer a:hover {
       color: #2c2c2c;
       text-decoration-thickness: 2px;
     }
     
-    /* Ensure ASCII art scales properly */
-    .ascii pre {
+/* Ensure ASCII art scales properly */
+.ascii pre {
       margin: 0;
       transform: scale(clamp(0.6, 1.5vw, 1.2));
     }
     
-    /* Add subtle animation to grid items on page load */
-    .grid-item {
+/* Add subtle animation to grid items on page load */
+.grid-item {
       animation: fadeInUp 0.6s cubic-bezier(0.4, 0, 0.2, 1) forwards;
       opacity: 0;
       transform: translateY(20px);
     }
     
-    .grid-item:nth-child(1) { animation-delay: 0.1s; }
-    .grid-item:nth-child(2) { animation-delay: 0.2s; }
-    .grid-item:nth-child(3) { animation-delay: 0.3s; }
-    .grid-item:nth-child(4) { animation-delay: 0.4s; }
-    .grid-item:nth-child(5) { animation-delay: 0.5s; }
-    .grid-item:nth-child(6) { animation-delay: 0.6s; }
+.grid-item:nth-child(1) { animation-delay: 0.1s; }
+.grid-item:nth-child(2) { animation-delay: 0.2s; }
+.grid-item:nth-child(3) { animation-delay: 0.3s; }
+.grid-item:nth-child(4) { animation-delay: 0.4s; }
+.grid-item:nth-child(5) { animation-delay: 0.5s; }
+.grid-item:nth-child(6) { animation-delay: 0.6s; }
     
-    @keyframes fadeInUp {
+@keyframes fadeInUp {
       to {
         opacity: 1;
         transform: translateY(0);
